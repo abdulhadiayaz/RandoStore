@@ -49,7 +49,7 @@ function App() {
   }
 
   const emptyCart = () => {
-    console.log("emptyCart Triggered")
+    //console.log("emptyCart Triggered")
     setCart([])
     localStorage.removeItem("cart");
   }
@@ -60,8 +60,8 @@ function App() {
 
   return (
     <Fragment>
-      <Header itemsInCart={itemsInCart()} />
       <Router>
+      <Header itemsInCart={itemsInCart()} />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/products" element={<AllProducts addToCart={addToCart} />} />

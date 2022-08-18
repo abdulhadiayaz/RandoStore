@@ -32,7 +32,6 @@ const AddProduct = () => {
         event.preventDefault();
 
         const isFormValid = formValidation();
-        console.log("here: ", isFormValid);
         if (isFormValid) {
             const formData = {
                 name: productName,
